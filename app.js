@@ -7,7 +7,9 @@ app.get('/', function(req, res) {
 
 module.exports = app;
 
-if (process.env.port) 
+if (process.env.port) {
     app.listen(process.env.port);
+    console.log('started app on port', process.env.port);
+}
 
 
