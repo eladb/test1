@@ -7,3 +7,7 @@ app.get('/', function(req, res) {
 
 module.exports = app;
 
+if (process.env.port) 
+    app.listen(process.env.port);
+
+
