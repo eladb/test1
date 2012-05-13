@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express.createServer();
 app.get('/', function(req, res) {
-    res.send('test v2\n');
+    res.send('test v3\n');
 });
 
 module.exports = app;
