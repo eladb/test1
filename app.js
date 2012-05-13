@@ -1,8 +1,10 @@
 var express = require('express');
 
+var started = new Date();
+
 var app = express.createServer();
 app.get('/', function(req, res) {
-    res.send('test v3\n');
+    res.send('test v3. started at ' + started.toString() + '\n');
 });
 
 module.exports = app;
