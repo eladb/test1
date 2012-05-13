@@ -4,7 +4,7 @@ var started = new Date();
 
 var app = express.createServer();
 app.get('/', function(req, res) {
-    res.send('test v3. started at ' + started.toString() + '\n');
+    res.send('test v4. started at ' + started.toString() + '\n');
 });
 
 module.exports = app;
